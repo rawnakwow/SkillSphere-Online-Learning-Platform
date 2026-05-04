@@ -1,0 +1,17 @@
+ Local:         http://localhost:3000
+- Network:       http://192.168.56.1:3000
+
+
+
+
+
+
+
+
+
+
+npm run dev 
+
+
+
+BETTER_AUTH_SECRET=OSgGUOdNxRs6Fn25mAKAgcErePdhkkIc

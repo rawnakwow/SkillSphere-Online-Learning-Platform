@@ -1,65 +1,75 @@
-import Image from "next/image";
+import Link from "next/link";
+import courses from "../data/courses.json"; // Path updated: data is outside src
+import Hero from "./components/Hero";
+import LearningSuccess from "./components/LearningSuccess";
+import Mentors from "./components/Mentors";
+import CourseCard from "./components/CourseCard";
 
 export default function Home() {
+  // Requirement: Top 3 highest rated for the "Popular" section
+  const popularCourses = [...courses]
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 3);
+
+  // Requirement: Extra section for "Trending Now"
+  const trendingCourses = courses.filter((c) => c.trending).slice(0, 3);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="bg-slate-50 min-h-screen">
+      {/* 1. Hero Section */}
+      <Hero />
+
+      {/* 2. Popular Courses Section */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="flex justify-between items-end mb-10">
+          <div>
+            <h2 className="text-3xl font-bold text-slate-900">Popular Courses</h2>
+            <p className="text-gray-500 mt-2">The highest-rated paths chosen by our community.</p>
+          </div>
+          <Link href="/courses" className="text-blue-600 font-bold hover:underline">
+            Explore all →
+          </Link>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {popularCourses.map((course) => (
+            <CourseCard key={course.id} course={course} />
+          ))}
         </div>
-      </main>
+      </section>
+
+      {/* 3. Learning for Success Section (Bento Grid) */}
+      <LearningSuccess />
+
+      {/* 4. Meet Your Mentors Section */}
+      <Mentors />
+
+      {/* 5. Trending Now Section */}
+      <section className="container mx-auto px-6 py-16 mb-10">
+        <div className="flex items-center gap-4 mb-10">
+          <h2 className="text-3xl font-bold whitespace-nowrap">Trending Now</h2>
+          <div className="h-[2px] bg-blue-200 w-full text-blue-200"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {trendingCourses.map((course) => (
+            <div key={course.id} className="card bg-white shadow-md border border-gray-100 transition-transform hover:scale-[1.02]">
+              <figure className="px-4 pt-4">
+                {/* FIX: Use the path relative to the 'public' folder */}
+                <img  src="/images/mages1.jpg"  alt={course.title} className="rounded-xl h-40 w-full object-cover" />
+              </figure>
+              <div className="card-body">
+                <div className="badge badge-outline text-[10px] font-bold uppercase mb-2">New Release</div>
+                <h3 className="font-bold text-slate-800 line-clamp-1">{course.title}</h3>
+                <div className="flex justify-between items-center mt-4">
+                  <span className="text-xl font-bold text-slate-900">$89.99</span>
+                  <Link href={`/courses/${course.id}`} className="btn btn-circle btn-primary btn-sm text-white" >
+                    +
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

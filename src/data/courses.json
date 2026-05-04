@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Full-Stack Web Masterclass",
+    "instructor": "David Chen",
+    "duration": "48 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "image": "https://unsplash.com",
+    "category": "Development",
+    "trending": true
+  },
+  {
+    "id": 2,
+    "title": "User Experience Foundations",
+    "instructor": "Sarah Jenkins",
+    "duration": "24 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "image": "https://unsplash.com",
+    "category": "Design",
+    "trending": false
+  },
+  {
+    "id": 3,
+    "title": "Growth Hacking & Analytics",
+    "instructor": "Marcus Thorne",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "image": "https://unsplash.com",
+    "category": "Marketing",
+    "trending": true
+  },
+  {
+    "id": 4,
+    "title": "Python for Data Science",
+    "instructor": "Dr. Angela Yu",
+    "duration": "55 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "image": "https://unsplash.com",
+    "category": "Data Science",
+    "trending": true
+  },
+  {
+    "id": 5,
+    "title": "Advanced React Patterns",
+    "instructor": "Kent C. Dodds",
+    "duration": "30 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "image": "https://unsplash.com",
+    "category": "Development",
+    "trending": false
+  },
+  {
+    "id": 6,
+    "title": "Modern UI/UX Design Principles",
+    "instructor": "Elena Gilbert",
+    "duration": "24 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "image": "https://unsplash.com",
+    "category": "Design",
+    "trending": true
+  },
+  {
+    "id": 7,
+    "title": "Digital Marketing Strategy 2024",
+    "instructor": "Julia Adams",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "image": "https://unsplash.com",
+    "category": "Marketing",
+    "trending": false
+  },
+  {
+    "id": 8,
+    "title": "Machine Learning Bootcamp",
+    "instructor": "Dr. Alan Turing",
+    "duration": "64 hours",
+    "rating": 5.0,
+    "level": "Intermediate",
+    "image": "https://unsplash.com",
+    "category": "Data Science",
+    "trending": true
+  },
+  {
+    "id": 9,
+    "title": "iOS & Android App Dev with Flutter",
+    "instructor": "Michael Ross",
+    "duration": "36 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "image": "https://unsplash.com",
+    "category": "Development",
+    "trending": false
+  },
+  {
+    "id": 10,
+    "title": "Advanced Graphic Design",
+    "instructor": "David Miller",
+    "duration": "30 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "image": "https://unsplash.com",
+    "category": "Design",
+    "trending": false
+  },
+  {
+    "id": 11,
+    "title": "Cybersecurity Fundamentals",
+    "instructor": "Kevin Mitnick",
+    "duration": "40 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "image": "https://unsplash.com",
+    "category": "Development",
+    "trending": true
+  },
+  {
+    "id": 12,
+    "title": "AI Prompt Engineering for Pros",
+    "instructor": "Sam Altman",
+    "duration": "15 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "image": "https://unsplash.com",
+    "category": "Data Science",
+    "trending": true
+  },
+  {
+    "id": 13,
+    "title": "SEO & Content Marketing Masterclass",
+    "instructor": "Neil Patel",
+    "duration": "25 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "image": "https://unsplash.com",
+    "category": "Marketing",
+    "trending": false
+  },
+  {
+    "id": 14,
+    "title": "Next.js 14 Enterprise Architecture",
+    "instructor": "Vercel Team",
+    "duration": "32 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "image": "https://unsplash.com",
+    "category": "Development",
+    "trending": true
+  },
+  {
+    "id": 15,
+    "title": "Branding & Visual Identity",
+    "instructor": "Paula Scher",
+    "duration": "18 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "image": "https://unsplash.com",
+    "category": "Design",
+    "trending": false
+  }
+]

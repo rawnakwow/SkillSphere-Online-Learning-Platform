@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://postimg.cc",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Mastering UI/UX Design",
+    "instructor": "Jane Smith",
+    "duration": "15 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Master Figma and modern design principles.",
+    "image": "https://postimg.cc",
+    "category": "Design"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing Mastery",
+    "instructor": "Sarah Wilson",
+    "duration": "12 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "description": "SEO, SEM, and Social Media Marketing strategy.",
+    "image": "https://postimg.cc",
+    "category": "Marketing"
+  },
+  {
+    "id": 4,
+    "title": "Python for Data Science",
+    "instructor": "Dr. Alex Reed",
+    "duration": "25 hours",
+    "rating": 4.6,
+    "level": "Advanced",
+    "description": "Analyze large datasets using Python and Pandas.",
+    "image": "https://postimg.cc",
+    "category": "Data Science"
+  },
+  {
+    "id": 5,
+    "title": "Graphic Design for Beginners",
+    "instructor": "Emily Chen",
+    "duration": "10 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn Photoshop and Illustrator from scratch.",
+    "image": "https://postimg.cc",
+    "category": "Design"
+  },
+  {
+    "id": 6,
+    "title": "JavaScript Deep Dive",
+    "instructor": "Michael Scott",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Understand closures, prototypes, and async JS.",
+    "image": "https://postimg.cc",
+    "category": "Development"
+  }
+]
