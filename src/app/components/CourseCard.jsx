@@ -29,7 +29,6 @@ export default function CourseCard({ course }) {
             ⭐ {course?.rating}
           </div>
         </div>
-
         <h2 className="card-title text-lg font-bold text-slate-800 leading-tight h-12 line-clamp-2">
           {course?.title}
         </h2>
